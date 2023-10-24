@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--fontAwsome for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>Bootstrap</title>
+    <style>
+      body {
+        background-color: #f0ebeb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">TaskY</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active fw-bold" aria-current="page" href="#"
+                >Home</a
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary fw-bold"
+            data-bs-toggle="modal"
+            data-bs-target="#AddNoteModal"
+          >
+            <i class="fas fa-solid fa-plus" style="color: #ffffff;"></i> Add
+            Note
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="AddNoteModal"
+            tabindex="-1"
+            aria-labelledby="AddNoteModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="AddNoteModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of modal -->
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+            <form class="container-fluid">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search Here"
+                  aria-label="Search Here"
+                  aria-describedby="basic-addon1"
+                />
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-search"></i
+                ></span>
+              </div>
+            </form>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <div class="card-header d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-outline-success">
+                  <i class="fas fa-regular fa-pencil-alt"></i>
+                </button>
+                <button type="button" class="btn btn-outline-danger">
+                  <i class="fas fa-regular fa-trash"></i>
+                </button>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1604251405903-b8c4e83cdf7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVsYXhhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                class="card-img-top"
+                alt="image"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Title</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
